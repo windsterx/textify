@@ -79,7 +79,7 @@ const Messages = ({ fromNo }) => {
       <Messaging
         items={[
           {
-            label: "Recieved",
+            label: "Messages",
             component: <Recieved fromNo={fromNo} messageRef={messageRef} />,
           },
           {

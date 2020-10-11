@@ -42,20 +42,22 @@ function App() {
             <Messages fromNo={fromNo} />
             <Dialog aria-labelledby="simple-dialog-title" open={open}>
               <DialogTitle id="simple-dialog-title">Number</DialogTitle>
-              <TextField
-                value={number}
-                onChange={(e) => setNumber(e.target.value)}
-                label="Enter Your Number"
-                placeholder="Enter a valid number"
-              />
-              <Button
-                onClick={() => {
-                  setFromNo(number);
-                  handleClose();
-                }}
-              >
-                Submit
-              </Button>
+              <div style={{ padding: "30px" }}>
+                <TextField
+                  value={number}
+                  onChange={(e) => setNumber(e.target.value)}
+                  label="Enter Your Number"
+                  placeholder="Enter a valid number"
+                />
+                <Button
+                  onClick={() => {
+                    setFromNo(number);
+                    handleClose();
+                  }}
+                >
+                  Submit
+                </Button>
+              </div>
             </Dialog>
           </Container>
         </Suspense>
